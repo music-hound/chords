@@ -1,13 +1,12 @@
 import { Box, Button, Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
 
-const MainPage = ()=>{
+const Progression = ()=>{
     const dispatch = useDispatch()
     return (
         <Box
         sx={{
             width:'100%',
-            height:'100vh',
             display:'flex',
             flexDirection:'column',
             justifyContent:'center',
@@ -15,21 +14,13 @@ const MainPage = ()=>{
         }}>
             <Typography
             sx={{
-                fontSize:'50px',
+                fontSize:'30px',
             }}>
-                hello world
+                Progression page
             </Typography>
-            
-            <Button
-            variant="outlined"
-            onClick={()=>{
-                dispatch( { type:'TOGGLE_THEME' } )
-            }}
-            >
-                change theme
-            </Button>
+
         </Box>
     )
 }
 
-export default MainPage;
+export default Progression;

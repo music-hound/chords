@@ -1,16 +1,24 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import { Outlet } from 'react-router-dom';
+import { Box } from '@mui/material';
 
 const Layout = () => {
   return (
-    <div>
+    <Box
+    sx={{
+      margin:'0 auto',
+      maxWidth:'750px',
+      display:'flex',
+      flexDirection:'column',
+      alignItems:'center',
+    }}>
       <Header />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </div>
+      </Box>
   );
 }
 

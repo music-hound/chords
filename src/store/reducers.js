@@ -1,7 +1,7 @@
 import { combineReducers } from "@reduxjs/toolkit";
-const deviceTheme = window.matchMedia('(prefers-color-scheme:light)').matches
+// const deviceTheme = window.matchMedia('(prefers-color-scheme:light)').matches
 
-function isLight(state=deviceTheme, action){
+function isLight(state=false, action){
     switch (action.type) {
         case 'TOGGLE_THEME':
             return !state
@@ -10,8 +10,18 @@ function isLight(state=deviceTheme, action){
     }
 }
 
+function keyNote(state='C',action){
+    switch (action.type) {
+        case 'CHANGE_KEYNOTE':
+            return action.keyNote
+        default:
+            return state
+    }
+}
+
 const reducer = combineReducers({
     isLight,
+    keyNote,
   });
   
   export default reducer;

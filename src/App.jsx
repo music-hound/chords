@@ -7,8 +7,11 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import { lightTheme, darkTheme } from "./theme";
 
 import Layout from './pages/Layout';
-import MainPage from "./pages/MainPage";
+import Chords from "./pages/Chords";
 import ErrorPage from './pages/ErrorPage';
+import Progression from './pages/Progression';
+
+console.clear()
 
 function App() {
 
@@ -23,7 +26,8 @@ function App() {
           path="/"
           element={<Layout />}
           >
-            <Route index element={<MainPage />} />
+            <Route index element={<Chords />} />
+            <Route path="/progression" element={<Progression />} />
             <Route path="/404" element={<ErrorPage />} />
             <Route path="*" element={<Navigate to="/404" replace />} />
           </Route>

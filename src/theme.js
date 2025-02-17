@@ -4,7 +4,7 @@ const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#1976d2", // Синий
+      main: "#ffaa26", // Золотистый
     },
     secondary: {
       main: "#dc004e", // Розовый
@@ -27,7 +27,7 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#90caf9", // Светло-синий
+      main: "#ffaa26", // Золотистый
     },
     secondary: {
       main: "#f48fb1", // Розовый
