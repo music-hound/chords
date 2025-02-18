@@ -1,6 +1,6 @@
 {
-    "short_name": "MyApp",
-    "name": "My Awesome PWA",
+    "short_name": "Chords",
+    "name": "Piano chords PWA",
     "icons": [
       {
         "src": "icon-192x192.png",
