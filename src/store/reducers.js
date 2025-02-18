@@ -19,9 +19,31 @@ function keyNote(state='C',action){
     }
 }
 
+function favoriteChords(state=[],action){
+    switch (action.type) {
+        case 'TOGGLE_FAVORITE':
+            return state.includes(action.chord)
+            ? state.filter(chord => chord !== action.chord)
+            : [...state, action.chord];
+        default:
+            return state
+    }
+}
+
+function scrollPosition(state = 0, action) {
+    switch (action.type) {
+        case "SET_SCROLL_POSITION":
+            return action.payload;
+        default:
+            return state;
+    }
+}
+
 const reducer = combineReducers({
     isLight,
     keyNote,
+    favoriteChords,
+    scrollPosition,
   });
   
   export default reducer;

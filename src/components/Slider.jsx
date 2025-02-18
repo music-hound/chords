@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { Box, Typography } from "@mui/material";
 import { chords } from "../utils/chords.js";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,6 +24,7 @@ export default function Slider(){
         Object.keys(chords).map((chord)=>{
             return (
                 <Typography
+                key={chord}
                 onClick={()=>{dispatch({type:'CHANGE_KEYNOTE',keyNote:chord})}}
                 variant='span'
                 sx={{
@@ -36,9 +36,9 @@ export default function Slider(){
                     transition:'0.5s',
                     display:'flex',
                     alignItems:'center',
-                    transform:`${chord===keyNote?'scale(1.3)':'none'}`,
+                    transform:`${ chord === keyNote ? 'scale(1.3)':'none'}`,
                 }}>
-                    {chord[0]}
+                    { chord[0] }
                     <Typography
                     sx={{
                         position:'absolute',
@@ -48,7 +48,7 @@ export default function Slider(){
                         right:'-15px',
                     }}
                     >
-                        {chord[1]}
+                        { chord[1] }
                     </Typography>
 
                 </Typography>

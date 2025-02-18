@@ -1,0 +1,24 @@
+.piano {
+    height: 100px;
+}
+.white_key {
+    width: 20px;
+}
+.black_key {
+    width: 13px;
+    margin-left: 21px;
+}
+
+@media (max-width: 400px) {
+    .piano {
+        height: 80px;
+    }
+    .white_key {
+        width: 16px;
+    }
+
+    .black_key {
+        width: 11px;
+        margin-left: 17px;
+    }
+}

@@ -2,7 +2,6 @@ import { Box, IconButton } from "@mui/material";
 import PianoIcon from '@mui/icons-material/Piano';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import { useNavigate } from "react-router";
-import GlowingGradientLine from "./Glow";
 
 const Footer = ()=>{
     const navigate = useNavigate();
@@ -18,14 +17,15 @@ const Footer = ()=>{
             bottom:'0px',
             padding:'10px 50px',
             zIndex:5,
-            background:'#181818',
+            backgroundColor:'background.default',
+            borderTop:'1px solid',
+            borderColor:'primary.main'
         }}>
-            <GlowingGradientLine />
             <Box
             sx={{
                 display:'flex',
                 gap:'20px',
-                padding:'20px 0px',
+                pb:'20px',
             }}>
                 <IconButton
                 onClick={()=> {navigate('/')}}

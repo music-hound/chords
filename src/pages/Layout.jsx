@@ -4,20 +4,22 @@ import { Outlet } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 const Layout = () => {
+  
   return (
     <Box
     sx={{
       margin:'0 auto',
-      maxWidth:'750px',
+      maxWidth:'650px',
       display:'flex',
       flexDirection:'column',
       alignItems:'center',
+      pb:'100px',
     }}>
       <Header />
       <main>
-        <Outlet />
+          <Outlet />
       </main>
-      <Footer />
+        <Footer />
       </Box>
   );
 }

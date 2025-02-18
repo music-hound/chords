@@ -33,7 +33,7 @@ const RippleEffect = () => {
                         height: "100%",
                         borderRadius: "50%",
                         border: "1px solid",
-                        borderColor:'primary.main'
+                        borderColor:'#ffaa26'
                     }}
                 />
             ))}
