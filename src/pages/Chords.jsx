@@ -9,14 +9,13 @@ const Chords = ()=>{
     return (
         <Box
         sx={{
-          // pt:'100px',
             width:'100vw',
             maxWidth:'650px',
             display:'flex',
             flexDirection:'column',
             justifyContent:'center',
             alignItems:'center',
-            gap:'20px',
+            gap:'10px',
         }}>
             <Typography
           sx={{

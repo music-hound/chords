@@ -13,7 +13,7 @@ const Layout = () => {
       display:'flex',
       flexDirection:'column',
       alignItems:'center',
-      pb:'100px',
+      pb:'120px',
     }}>
       <Header />
       <main>

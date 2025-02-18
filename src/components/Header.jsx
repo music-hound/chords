@@ -23,7 +23,9 @@ const Header = ()=>{
             position:'relative',
           }}>
             <Typography
+            variant="h1"
             sx={{
+              padding:'14px 0px',
               fontFamily:'Helvetica',
               fontSize:'80px',
               color:'#ffaa26',

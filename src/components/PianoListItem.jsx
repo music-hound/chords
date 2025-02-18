@@ -15,68 +15,77 @@ const PianoListItem = ( { chord } )=>{
         sx={{
             display:'flex',
             alignItems:'center',
+            boxSizing:'border-box',
             width:'95%',
             maxWidth:'100%',
-            border:'1px solid',
-            p:'10px 0px 10px 70px'
+            // border:'1px solid #ffaa2666',
+            boxShadow: 'inset 2px 2px 10px 0px #66666666',
+            borderRadius:'30px',
+            p:'10px'
         }}>
-            <Typography
+            <Box
             sx={{
-                position:'absolute'
-            }}>{chord.name}</Typography>
-
-<Box
-            sx={{
-              width:`100px`,
-              display:'flex',
-              justifyContent:'center',
-              alignItems:'center',
+                position:'relative',
+                width:`100px`,
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center',
             }}>
 
+            {/* Заголовок аккорда*/}
             <Typography
-            variant='span'
+            variant="h1"
             sx={{
-              // top:'-15px',
-              position:'relative',
-              fontSize:`80px`,
-              height:`100px`,
-              fontWeight:'800',
-              opacity:'0.4',
-            }}>
-              {chord.name[0]}
-                <Typography
-                sx={{
-                    position:'absolute',
-                    fontSize:`50px`,
-                    fontWeight:'800',
-                    top:'0px',
-                    right:'-20px',
-                }}
-                >
-                    {(chord.name[1] !== '-') ? chord.name[1] : ''}
-                </Typography>
+                position:'relative',
+                fontSize:'60px',
+                fontWeight:'800',
+                color:'primary.main',
+                opacity:'0.7',
+            }}
+            >
+                {chord.name[0]}
+
+            {/* Если есть диезы */}
+            <Typography
+            sx={{
+                position:'absolute',
+                fontSize:`25px`,
+                fontWeight:'800',
+                color:'primary.main',
+                top:'-3px',
+                right:'-12px',
+            }}
+            >
+                {(chord.name[1] !== '-') ? chord.name[1] : ''}
             </Typography>
 
+            {/* Обозначение аккорда */}
             <Typography
-            variant='span'
             sx={{
-              width:`100px`,
-              color:'#ffaa2666',
-              fontSize:`30px`,
-              textAlign:'right',
-              bottom:`60px`,
-              position:'absolute'
+                position:'absolute',
+                top:'55px',
+                right:'-10px',
+                fontSize:'15px',
+                textAlign:'right',
             }}>
-              {chord.name.split("-")[1]}
+                {chord.name.split("-")[1]}
+            </Typography>
+
             </Typography>
 
             </Box>
 
             <Piano notes={chord.midiKeys} />
             <IconButton
-            onClick={()=>{dispatch({type:'TOGGLE_FAVORITE', chord:chord})}}
+            onClick={ () => {
+                dispatch( { type:'TOGGLE_FAVORITE', chord:chord } )
+            }}
             >
-                { favoriteChords.includes(chord) ? <FavoriteIcon /> : <FavoriteBorderIcon /> }
+                {
+                    favoriteChords.includes(chord)
+                    ? <FavoriteIcon sx={{ color:'primary.main' }} />
+                    : <FavoriteBorderIcon sx={{ color:'primary.main' }} />
+                }
             </IconButton>
         </Box>
     )

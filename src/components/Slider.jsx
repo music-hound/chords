@@ -11,7 +11,7 @@ export default function Slider(){
         width:'95%',
         border:'1px solid #66666666',
         borderRadius:`30px`,
-        padding:`20px`,
+        padding:`20px 35px`,
         overflowX:'scroll',
         boxSizing:'border-box',
         display:'flex',
@@ -43,9 +43,9 @@ export default function Slider(){
                     sx={{
                         position:'absolute',
                         fontWeight:'800',
-                        fontSize:'20px',
-                        top:'-5px',
-                        right:'-15px',
+                        fontSize:'25px',
+                        top:'-3px',
+                        right:'-12px',
                     }}
                     >
                         { chord[1] }

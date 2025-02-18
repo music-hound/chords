@@ -1,10 +1,11 @@
 import { Box, IconButton } from "@mui/material";
 import PianoIcon from '@mui/icons-material/Piano';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 const Footer = ()=>{
     const navigate = useNavigate();
+    const location = useLocation();
     return (
         <Box
         sx={{
@@ -33,15 +34,26 @@ const Footer = ()=>{
                     color:'primary.main'
                 }}
                 >
-                    <PianoIcon sx={{fontSize:'40px'}}/>
-                    </IconButton>
+                    <PianoIcon
+                    sx={{
+                        fontSize:'40px',
+                        opacity:`${ location.pathname === '/' ? 1 : 0.5 }`
+                    }}
+                    />
+                </IconButton>
+
                 <IconButton
                 onClick={()=> {navigate('progression')}}
                 sx={{
                     color:'primary.main'
                 }}
                 >
-                    <LibraryMusicIcon sx={{fontSize:'40px'}}/>
+                    <LibraryMusicIcon
+                    sx={{
+                        fontSize:'40px',
+                        opacity:`${ location.pathname === '/progression' ? 1 : 0.5 }`
+                    }}
+                    />
                 </IconButton>
             </Box>
         </Box>

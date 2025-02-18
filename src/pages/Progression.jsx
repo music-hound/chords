@@ -9,12 +9,13 @@ const Progression = ()=>{
     return (
         <Box
         sx={{
-            width:'100%',
+            width:'100vw',
+            maxWidth:'650px',
             display:'flex',
             flexDirection:'column',
             justifyContent:'center',
             alignItems:'center',
-            pb:'150px',
+            gap:'10px',
         }}>
             <Typography
             sx={{
@@ -28,19 +29,23 @@ const Progression = ()=>{
               Progression
             </Typography>
 
-            <Box>
-
                 {
-                    favoriteChords.length===0 && <Typography sx={{mt:8}}> Nothing yet to show..</Typography>
+                    favoriteChords.length===0 &&
+                    <Typography sx={{mt:8}}>
+                        Nothing yet to show..
+                    </Typography>
                 }
 
                 {
                     favoriteChords &&
-                    favoriteChords.map( (chord) => <PianoListItem key={chord.name+'_progression'} chord={chord} /> )
+                    favoriteChords.map(
+                        (chord) => <PianoListItem
+                        key={chord.name+'_progression'}
+                        chord={chord}
+                        />
+                    )
                 }
-            
-            
-            </Box>
+
         </Box>
     )
 }
