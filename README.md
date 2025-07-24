@@ -15,13 +15,13 @@ Perfect for learning, teaching, or experimenting with harmony.
 
 <h3>💻 Preview desktop:</h3>
 <p align="center">
-  <img src="/public/preview.png" width="50%"/>
-  <img src="/public/preview_2.png" width="50%"/>
+  <img src="/public/preview.png" width="40%"/>
+  <img src="/public/preview_2.png" width="40%"/>
 </p>
 
 <h3>📱 Preview mobile:</h3>
 
 <p align="center">
-  <img src="/public/mobile.png" width="50%" />
-  <img src="/public/mobile_2.png" width="50%" />
+  <img src="/public/mobile.png" width="40%" />
+  <img src="/public/mobile_2.png" width="40%" />
 </p>
