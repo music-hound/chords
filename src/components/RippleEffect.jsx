@@ -25,7 +25,7 @@ const RippleEffect = () => {
                         duration: 2,
                         repeat: Infinity,
                         repeatDelay: 1,
-                        delay: i * 0.6, // Смещение волн по времени
+                        delay: i * 0.6,
                     }}
                     style={{
                         position: "absolute",

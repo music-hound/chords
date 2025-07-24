@@ -13,14 +13,11 @@ Perfect for learning, teaching, or experimenting with harmony.
 
 **Live Demo:** [https://music-hound.github.io/chords](https://music-hound.github.io/chords)
 
-
-<h3>Preview:</h3>
-<img src="/public/preview.png" />
-<img src="/public/preview_2.png" />
-
-<h3>Preview mobile:</h3>
-<img style="width:40%" src="/public/mobile_preview.png" />
-<img style="width:40%" src="/public/mobile_preview_2.png" />
+<h3>💻 Preview desktop:</h3>
+<p align="center">
+  <img src="/public/preview.png"/>
+  <img src="/public/preview_2.png"/>
+</p>
 
 <h3>📱 Preview mobile:</h3>
 
