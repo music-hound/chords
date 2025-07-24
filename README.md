@@ -21,3 +21,10 @@ Perfect for learning, teaching, or experimenting with harmony.
 <h3>Preview mobile:</h3>
 <img style="width:40%" src="/public/mobile_preview.png" />
 <img style="width:40%" src="/public/mobile_preview_2.png" />
+
+<h3>📱 Preview mobile:</h3>
+
+<p align="center">
+  <img src="/public/mobile_preview.png" width="200" />
+  <img src="/public/mobile_preview_2.png" width="200" />
+</p>
