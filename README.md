@@ -22,6 +22,6 @@ Perfect for learning, teaching, or experimenting with harmony.
 
 <p align="center">
   <img src="/public/mobile.png" width="40%" />
-  <p> </p>
+  <span> </span>
   <img src="/public/mobile_2.png" width="40%" />
 </p>
